@@ -1,0 +1,134 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Fedora';
+    src: url("src/assets/fonts/fedora/Fedora.ttf") format("truetype") ;
+}
+
+@font-face{
+    font-family: 'Fedora-Shadow';
+    src: url("src/assets/fonts/fedora/Fedora-Shadow.ttf") format("truetype") ;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #82367d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+
+}
+
+.jojoSpan {
+    font-family: 'Fedora';
+    font-size: 8em;
+    background: -webkit-linear-gradient( #EB2D93, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 10px 2px #000;
+    line-height: 1.3em;
+}
+
+.jojoSpan .char {
+    transform: translateY(-250px);
+    transition: transform .5s;
+    
+}
+
+
+
+.baSpan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 800;
+    color: #000;
+    font-size: 3em;
+    line-height: 0.8em;
+    text-transform: uppercase;
+    transform: translateY(200px);
+    margin-right: 10px;
+    transition: transform .5s;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform .5s;
+    
+}
+
+.wrapper div {
+    height: 100%;
+    flex: 0 0 12.5%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+}
+
+.wrapper div img {
+    transform: translateX(100%);
+    opacity: 0;
+
+}
+
+
+.wrapper div:nth-child(1) {
+    background-color: #B96AE0;
+}
+
+.wrapper div:nth-child(2) {
+    background-color: #5FD99B;
+}
+
+.wrapper div:nth-child(3) {
+    background-color: #33B3C8;
+}
+
+.wrapper div:nth-child(4) {
+    background-color: #E2D42D;
+}
+
+.wrapper div:nth-child(5) {
+    background-color: #ED686E;
+}
+
+.wrapper div:nth-child(6) {
+    background-color: #637AD7;
+}
+
+.wrapper div:nth-child(7) {
+    background-color: #EB6CD0;
+}
+
+.wrapper div:nth-child(8) {
+    background-color: #EC832E;
+}
+
